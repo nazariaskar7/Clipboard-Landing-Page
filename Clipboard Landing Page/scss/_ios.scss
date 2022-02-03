@@ -1,0 +1,37 @@
+.ios {
+  padding: 0 2em;
+  text-align: center;
+  margin-bottom: 172px;
+
+  &__header {
+    @include breakpoint(medium) {
+      max-width: 684px;
+      margin: auto;
+    }
+    p {
+      margin-top: 29px;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      margin-top: 111px;
+    }
+  }
+
+  .buttons {
+    max-width: 628px;
+    margin: auto;
+
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+
+    .cyan {
+      @include breakpoint(medium) {
+        margin: 0;
+      }
+    }
+  }
+}

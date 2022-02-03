@@ -1,0 +1,32 @@
+.workflow {
+  padding: 0 2em;
+  text-align: center;
+
+  &__header {
+    p {
+      margin-top: 25px;
+      margin-bottom: 93px;
+    }
+  }
+
+  &__columns {
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1112px;
+      margin: auto;
+    }
+  }
+
+  img {
+    width: 46px;
+    margin-bottom: 48px;
+    margin-top: 57px;
+  }
+
+  &__columns {
+    p {
+      margin-top: 30px;
+    }
+  }
+}

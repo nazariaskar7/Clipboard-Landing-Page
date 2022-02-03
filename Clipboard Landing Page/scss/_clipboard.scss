@@ -1,0 +1,25 @@
+.clipboard {
+  padding: 0 2em;
+  margin-top: 144px;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    max-width: 820px;
+    margin: auto;
+  }
+  &__header {
+    @include breakpoint(medium) {
+      max-width: 779px;
+      margin: auto;
+    }
+
+    p {
+      margin-top: 22px;
+      margin-bottom: 67px;
+    }
+  }
+
+  img {
+    margin-bottom: 138px;
+  }
+}

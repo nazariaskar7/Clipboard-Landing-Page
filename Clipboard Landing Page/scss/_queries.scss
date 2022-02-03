@@ -1,0 +1,13 @@
+// Media Queries
+$breakpoints: (
+  medium: 768px,
+  large: 1440px,
+);
+
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get($breakpoints, $size);
+
+  @media screen and (min-width: $breakpoint-value) {
+    @content;
+  }
+}

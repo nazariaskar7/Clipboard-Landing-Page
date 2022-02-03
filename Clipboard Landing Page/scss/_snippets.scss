@@ -1,0 +1,64 @@
+.snippets {
+  text-align: center;
+  padding: 2em;
+
+  @include breakpoint(medium) {
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    @include breakpoint(medium) {
+      font-size: 28px;
+      margin-top: 100px;
+    }
+  }
+
+  .container {
+    @include breakpoint(medium) {
+      max-width: 528px;
+      margin: auto;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 27px;
+      margin-bottom: 67px;
+    }
+  }
+
+  img {
+    margin-bottom: 63px;
+
+    @include breakpoint(medium) {
+      position: relative;
+      left: -37px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__main {
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 63px;
+      margin-bottom: 160px;
+
+      P {
+        max-width: 342px;
+      }
+    }
+
+    &__columns {
+      @include breakpoint(medium) {
+        padding: 5rem;
+      }
+    }
+  }
+
+  p {
+    margin-top: 23px;
+    margin-bottom: 61px;
+  }
+}

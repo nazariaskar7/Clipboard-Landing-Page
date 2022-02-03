@@ -1,0 +1,22 @@
+.logos {
+  padding: 0 2em;
+  text-align: center;
+  margin-top: 131px;
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 102px;
+    padding: 0 128px;
+    text-align: center;
+  }
+
+  img {
+    width: 144px;
+    display: block;
+    margin: auto;
+    margin-bottom: 64px;
+  }
+}
